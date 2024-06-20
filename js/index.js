@@ -25,10 +25,3 @@ function reset() {
     document.getElementById('fahrenheit').value = '';
     document.getElementById('cara').value = '';
 }
-
-function reverse() {
-    const celsius = document.getElementById('celsius').value;
-    const fahrenheit = document.getElementById('fahrenheit').value;
-    document.getElementById('celsius').value = fahrenheit;
-    document.getElementById('fahrenheit').value = celsius;
-}
