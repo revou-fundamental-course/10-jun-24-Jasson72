@@ -3,27 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Konversi suhu</title>
+    <title>Konversi Suhu</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>Konversi suhu</h1>
+        <h1>Konversi Suhu</h1>
     </header>
     <main>
-        <h3>Inputkan yang dibutuhkan</h3>
+        <p>Masukan suhu derajat Celcius (&deg;C) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Farenheit (&deg;F)</p>
         <section>
             <header>
                 <h3>Celcius (&deg;C):</h3>
             </header>
             <section>
-                <textarea>
-
-                </textarea>
+                <textarea id="celsius"></textarea>
                 <section>
-                    <button>Konfirmasi</button>
-                    <button>Reset</button>
-                    <button>Reverse</button>
+                    <button onclick="konversiCelcius()">Konversi</button>
+                    <button onclick="reset()">Reset</button>
+                    <button onclick="reverse()">Reverse</button>
                 </section>
             </section>
         </section>
@@ -32,19 +30,15 @@
                 <h3>Fahrenheit (&deg;F):</h3>
             </header>
             <section>
-                <textarea>
-
-                </textarea>
+                <textarea id="fahrenheit"></textarea>
             </section>
         </section>
         <section>
             <header>
-                <h3>Cara kalkukasi:</h3>
+                <h3>Cara kalkulasi:</h3>
             </header>
             <section>
-                <textarea>
-
-                </textarea>
+                <textarea id="cara"></textarea>
             </section>
         </section>
 
@@ -57,11 +51,11 @@
                 Suhu <span class="S">S</span> dalam derajat Fahrenheit (&deg;F) sama dengan suhu <span class="S">S</span> dalam derajat Celcius (&deg;C) kali <span class="A">9/5</span> tambah <span class="B">32.</span>
             </p>
             <p>
-                <span class="S">S</span> <sub>(&deg;F)</sub> = (class="S">S</span>(&deg;C) x 9/5) + 32
+                <span class="S">S</span> <sub>(&deg;F)</sub> = (<span class="S">S</span>(&deg;C) x 9/5) + 32
             </p>
             <p>atau</p>
             <p>
-                <span class="S">S</span> <sub>(&deg;F)</sub> = (class="S">S</span>(&deg;C) x 1.8) + 32
+                <span class="S">S</span> <sub>(&deg;F)</sub> = (<span class="S">S</span>(&deg;C) x 1.8) + 32
             </p>
         </section>
     </main>
